@@ -4,6 +4,16 @@
     height: 10%;
     margin: 0 auto; // Centra horizontalmente
   }
+
+  .custom-card-detalles {
+    background: #59cbe8;
+    width: 25%; // Ajusta el valor según tus preferencias
+    margin-left: 3%; // Centra horizontalmente
+    margin-top: 4%;
+    box-sizing: border-box; /* Incluye el padding en el ancho */
+    height: 20%;
+
+  }
   
   // Centrar el contenido de mat-card-content
   .custom-card-content {
@@ -11,8 +21,18 @@
     justify-content: center;
     align-items: center;
     height: 100%;
-    font-size: 45px; // Tamaño de letra grande
+    font-size: 20px; // Tamaño de letra grande
     font-weight: bold; // Fuente en negrita
+      
+  }
+
+  .custom-card-content-detalles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 35px; // Tamaño de letra grande
+    font-weight: 350; // Fuente en negrita
       
   }
 
@@ -55,4 +75,60 @@
     display: flex;
     justify-content: center;
     margin-top: 5px; 
+  }
+
+  .etiqueta {
+    margin-bottom: 1px; /* Margen inferior */
+  }
+  
+  .valor {
+    margin-top: 0; /* Elimina el margen superior */
+    margin-bottom: 0; /* Elimina el margen inferior */
+    font-size: 19px;
+  }
+
+  i {
+    font-size: 35px;
+  }
+
+  .div-inline {
+    display: flex;
+    align-items: center;
+    margin-top: 35px;
+    margin-left: 15px;
+
+  }
+
+  .contenido {
+    margin-left: 10px;
+    font-size: 16px;
+    font-family: OpenSans,sans-serif;
+  }
+
+  .contenido p {
+    line-height: 21px;
+  }
+
+  .final {
+    margin-bottom: 5%;
+  }
+
+  .mostrarInfo {
+      display: flex;
+      gap: 20px; /* Espacio entre las tarjetas */
+  }
+
+  .mat-elevation-z8 {
+    width: 100%; /* Asegura que ocupe todo el ancho permitido */  
+  
+  }
+  .tabla-container {
+    flex: 1; /* Ocupa el espacio restante */
+    margin-top: 4%;
+    margin-right: 3%;
+  }
+
+  .atras{
+    margin-left: 10px;
+    margin-top: 5px;
   }
