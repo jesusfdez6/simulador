@@ -1,0 +1,58 @@
+// Ajustar el ancho de mat-card
+.custom-card {
+    width: 100%; // Ajusta el valor según tus preferencias
+    height: 10%;
+    margin: 0 auto; // Centra horizontalmente
+  }
+  
+  // Centrar el contenido de mat-card-content
+  .custom-card-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 45px; // Tamaño de letra grande
+    font-weight: bold; // Fuente en negrita
+      
+  }
+
+  .container-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+  }
+
+  .custom-form-field {
+    width: 500px; /* Ajusta el valor según tus preferencias */
+  }
+
+
+  .mat-label{
+    font-size: 20px; // Tamaño de letra grande
+    font-weight: bold; // Fuente en negrita
+    margin-bottom: 10px;
+  }
+
+  .button_simular{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .button_simular {
+    display: block;
+    margin: 0 auto;
+    margin-top: 5px; 
+    width: 250px;
+    height: 40px;
+    font-size: 20px;
+
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px; 
+  }
