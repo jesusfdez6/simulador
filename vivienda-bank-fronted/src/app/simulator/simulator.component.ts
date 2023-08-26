@@ -35,10 +35,12 @@ export class SimulatorComponent implements OnInit {
   onSubmit() {
     if (this.simulator.valid) {
       const formData = this.simulator.value;
+      console.log(formData);
       this.loanTotal = formData.loanTotal;
       this.simulatorService.send(formData).subscribe(
         {
           next: (response) => {
+            console.log(response);
             this.mostrarInformacion = true;
             this.responseSimulator=response;
         },
@@ -58,7 +60,6 @@ export class SimulatorComponent implements OnInit {
   get filteredPlanDetail(): any[] {
     const startIndex = (this.selectedYear - 1) * this.itemsPerPage;
     const endIndex = startIndex + this.itemsPerPage;
-    console.log(this.responseSimulator.plan.planDetail.slice(startIndex, endIndex));
     return this.responseSimulator.plan.planDetail.slice(startIndex, endIndex);
   }
 
@@ -66,7 +67,6 @@ export class SimulatorComponent implements OnInit {
     const selectedValue = event.value;
     if (selectedValue !== null) {
       this.selectedYear = +selectedValue;
-      console.log('Año seleccionado:', this.selectedYear);
     }
   }
 

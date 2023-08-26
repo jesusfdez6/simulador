@@ -9,13 +9,16 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations'; // Importa ReactiveFormsModule
 import { MaterialModule } from './material/material.module';
 import { HttpClientModule } from '@angular/common/http';
+import { LandingComponent } from './landing/landing.component';
+import { RouterModule } from '@angular/router';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    SimulatorComponent
+    SimulatorComponent,
+    LandingComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +27,8 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserAnimationsModule,
     NoopAnimationsModule,
     MaterialModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule
     
     
   ],

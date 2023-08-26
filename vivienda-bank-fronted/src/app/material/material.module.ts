@@ -13,8 +13,10 @@ import {MatTableModule} from '@angular/material/table';
     MatInputModule,
     MatSelectModule,
     MatCardModule,
-    MatTableModule
+    MatTableModule,
+    
     // Agrega otros módulos de Angular Material que quieras usar
-  ]
+  ],
+
 })
 export class MaterialModule {}
