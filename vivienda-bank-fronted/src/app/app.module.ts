@@ -28,7 +28,7 @@ import { RouterModule } from '@angular/router';
     NoopAnimationsModule,
     MaterialModule,
     HttpClientModule,
-    RouterModule
+    RouterModule,
     
     
   ],
